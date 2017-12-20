@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btnRun = new System.Windows.Forms.Button();
+            this.wbRun = new System.Windows.Forms.WebBrowser();
             this.SuspendLayout();
             // 
             // btnRun
@@ -41,11 +42,22 @@
             this.btnRun.UseVisualStyleBackColor = true;
             this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
             // 
+            // wbRun
+            // 
+            this.wbRun.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.wbRun.Location = new System.Drawing.Point(0, 69);
+            this.wbRun.MinimumSize = new System.Drawing.Size(20, 20);
+            this.wbRun.Name = "wbRun";
+            this.wbRun.Size = new System.Drawing.Size(975, 189);
+            this.wbRun.TabIndex = 1;
+            this.wbRun.Url = new System.Uri("", System.UriKind.Relative);
+            // 
             // frm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(975, 328);
+            this.ClientSize = new System.Drawing.Size(975, 258);
+            this.Controls.Add(this.wbRun);
             this.Controls.Add(this.btnRun);
             this.Name = "frm";
             this.Text = "蜂巢";
@@ -57,6 +69,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnRun;
+        private System.Windows.Forms.WebBrowser wbRun;
     }
 }
 
